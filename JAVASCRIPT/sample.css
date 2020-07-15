@@ -1,0 +1,23 @@
+.login{
+position:relative;
+left:33.33%;
+border:1px solid black;
+width:300px;
+background-color:lightgray;
+}
+.signup{
+    position:relative;
+    left:30%;
+    border:1px solid black;
+    width:600px;
+    background-color:lightgray;
+}
+.all{
+    position:relative;
+    left:20%;
+    text-decoration:none;
+}
+#sign{
+    width:100px;
+    border-radius:1px;
+}

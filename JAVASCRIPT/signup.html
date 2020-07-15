@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>SignUp</title>
+        <link rel="stylesheet" type="text/css" href="sample.css"/>
+    </head>
+    <script>
+        function validate()
+        {
+            var pwd1=document.getElementById("password").value;
+            var pwd2=document.getElementById("cpassword").value;
+            if(pwd1!=pwd2)
+                document.getElementById("message").setAttribute("hidden",true);
+            else
+                document.getElementById("message").removeAttribute("hidden");
+        }
+    </script>
+    <body>
+            <div class="signup">
+                <form>
+                    <h2 class="all">Sign up</h2>
+                    <p class="all" id="message" hidden>Passwords are not matching</p>
+                    <input class="all" type="text" name="Username" placeholder="Username" required><br><br>
+                    <input class="all" id="password" type="password" name="password" placeholder="password" required>
+                    <input class="all" id="cpassword" type="password" name="confirm" placeholder="confirm" required><br><br>
+                    <input class="all" id="sign" type="submit" onclick="validate()" value="Create account">
+                    <a class="all" href="login.html">Sign in instead</a> 
+                </form>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="sample.css"/>
+    </head>
+    <script>
+        function validate()
+        {
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            //validation email and pwd are username=abcdef password=pqrstu;
+            if(username!="abcdef"||password!="pqrstu")
+                document.getElementById("message").removeAttribute("hidden");
+            else
+                document.getElementById("message").setAttribute("hidden",true);
+        }
+    </script>
+    <body>
+        <div class="login">
+            <form>
+                <h2 class="all">Sign in</h2>
+                <p class="all" id="message" hidden>Incorrect Email or Password</p>
+                <input class="all" type="text" id="username" placeholder="Username" required><br><br>
+                <input class="all" type="password" id="password" placeholder="Password" required><br><br>
+                <input class="all" id="sign" type="submit" onclick="validate()" value="Sign in" required><br><br>
+                <a class="all" href="signup.html">Sign Up</a>
+            </form>
+        </div>
+    </body>
+</html>
